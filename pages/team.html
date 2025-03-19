@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team - E-Lab Think Tank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-black to-[#0A1F44] text-gray-200 transition-colors duration-200"
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full bg-[#0A1F44]/80 backdrop-blur-sm border-b border-[#00FFFF]/10 shadow-lg z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <a href="/" class="text-2xl font-bold text-[#00FFFF]"
+              ><img src="../images/logo.png" alt="logo" class="w-10 h-10"
+            /></a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-4">
+              <a
+                href="/"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="/pages/about.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >About</a
+              >
+              <a
+                href="/pages/projects.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Projects</a
+              >
+              <a
+                href="/pages/team.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Team</a
+              >
+              <a
+                href="/pages/media.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Media</a
+              >
+              <a
+                href="/pages/contact.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+              <button
+                id="darkModeToggle"
+                class="p-2 rounded-full hover:bg-[#0A1F44] text-[#00FFFF]"
+              >
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:block text-[#FF4500]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobileMenuButton"
+              class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="/"
+            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="/pages/about.html"
+            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            >About</a
+          >
+          <a
+            href="/pages/projects.html"
+            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            >Projects</a
+          >
+          <a
+            href="/pages/team.html"
+            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            >Team</a
+          >
+          <a
+            href="/pages/media.html"
+            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            >Media</a
+          >
+          <a
+            href="/pages/contact.html"
+            class="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-base font-medium"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-[#0A1F44]/30">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h1 class="text-4xl md:text-5xl font-bold text-[#00FFFF] mb-4">
+            Meet Our Team
+          </h1>
+          <p class="text-xl text-gray-300">
+            The brilliant minds behind our innovative solutions
+          </p>
+        </div>
+
+        <!-- Leadership Team -->
+        <div class="mb-20">
+          <h2
+            class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12"
+          >
+            Leadership Team
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Team Member Template (Repeat for each member) -->
+            <div
+              class="bg-[#0A1F44]/40 rounded-lg overflow-hidden shadow-lg border border-[#00FFFF]/20 animate-on-scroll"
+            >
+              <div class="relative">
+                <img
+                  src="/images/dianah.jpg"
+                  alt="Leadership Member"
+                  class="w-full h-64 object-cover"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1F44] to-transparent p-4"
+                >
+                  <h3 class="text-xl font-bold text-white">
+                    Dianah GASASIRA SHIMWA
+                  </h3>
+                  <p class="text-gray-200">TEAM LEAD & ADMINISTRATOR</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-300 dark:text-gray-300 mb-4">
+                  LEADER OF THE IDEAS DEN
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="mailto:d.shimwa@alustudent.com"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/dianahgasasira/?__pwa=1#"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leadership Member 2 -->
+            <div
+              class="bg-[#0A1F44]/40 rounded-lg overflow-hidden shadow-lg border border-[#00FFFF]/20 animate-on-scroll"
+            >
+              <div class="relative">
+                <img
+                  src="https://via.placeholder.com/400x400"
+                  alt="Leadership Member"
+                  class="w-full h-64 object-cover"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1F44] to-transparent p-4"
+                >
+                  <h3 class="text-xl font-bold text-white">Kevin USANASE</h3>
+                  <p class="text-gray-200">MANAGER</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-300 dark:text-gray-300 mb-4">
+                  MANAGER OF THE IDEAS DEN
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="mailto:k.usanase@alustudent.com"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/__k.evin_/?__pwa=1#"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Team -->
+        <div class="mb-20">
+          <h2
+            class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12"
+          >
+            Core Team
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Leader 1 -->
+            <div
+              class="bg-[#0A1F44]/40 rounded-lg overflow-hidden shadow-lg border border-[#00FFFF]/20 animate-on-scroll"
+            >
+              <div class="relative">
+                <img
+                  src="/images/linda.jpg"
+                  alt="CEO"
+                  class="w-full h-64 object-cover"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1F44] to-transparent p-4"
+                >
+                  <h3 class="text-xl font-bold text-white">
+                    Linda MUTAVU KAMIKAZI
+                  </h3>
+                  <p class="text-gray-200">DIRECTOR & COMMUNICATION LEAD</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-300 dark:text-gray-300 mb-4">
+                  DIRECTOR OF THE IDEAS DEN
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="mailto:l.mutavu@alustudent.com"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/_.lindaa.m/?__pwa=1#"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leader 2 -->
+            <div
+              class="bg-[#0A1F44]/40 rounded-lg overflow-hidden shadow-lg border border-[#00FFFF]/20 animate-on-scroll"
+            >
+              <div class="relative">
+                <img
+                  src="/images/shadia.jpg"
+                  alt="CTO"
+                  class="w-full h-64 object-cover"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1F44] to-transparent p-4"
+                >
+                  <h3 class="text-xl font-bold text-white">Shadia USANASE</h3>
+                  <p class="text-gray-200">
+                    SOUND ENGINEER & COMMUNICATION LEAD
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-300 dark:text-gray-300 mb-4">
+                  SOUND ENGINEER OF THE IDEAS DEN
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="#"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="mailto:s.usanase@alustudent.com"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/__usanase_/?__pwa=1#"
+                    target="_blank"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leader 3 -->
+            <div
+              class="bg-[#0A1F44]/40 rounded-lg overflow-hidden shadow-lg border border-[#00FFFF]/20 animate-on-scroll"
+            >
+              <div class="relative">
+                <img
+                  src="/images/tony.jpg"
+                  alt="CSO"
+                  class="w-full h-64 object-cover"
+                />
+                <div
+                  class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0A1F44] to-transparent p-4"
+                >
+                  <h3 class="text-xl font-bold text-white">
+                    Robert Tony MITALI Niyonkuru
+                  </h3>
+                  <p class="text-gray-200">EDITOR & DEVELOPER</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <p class="text-gray-300 dark:text-gray-300 mb-4">
+                  EDITOR & DEVELOPER OF THE IDEAS DEN
+                </p>
+                <div class="flex space-x-4">
+                  <a
+                    href="https://www.linkedin.com/in/tony-robert-59036030b/"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a
+                    href="mailto:r.niyonkuru@alustudent.com"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/mitali.unfolded/?__pwa=1#"
+                    class="text-[#00FFFF] hover:text-[#8A2BE2] transition-colors duration-200"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Join Our Team Section -->
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Join Our Team
+          </h2>
+          <p class="text-gray-300 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+            We're always looking for an opportunity to change the world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A1F44] text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#00FFFF]">IDEAS DEN</h3>
+            <p class="text-gray-400">
+              Innovating for a better tomorrow through collaborative thinking
+              and cutting-edge solutions.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#00FFFF]">
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/pages/about.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/projects.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/team.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/media.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Media</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/contact.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#00FFFF]">Connect</h4>
+            <div class="flex space-x-4">
+              <a
+                href="mailto:d.shimwa@alustudent.com"
+                class="hover:text-[#00FFFF] transition-colors duration-200"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/theideas.den/?__pwa=1#"
+                target="_blank"
+                class="hover:text-[#00FFFF] transition-colors duration-200"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#00FFFF]">
+              Newsletter
+            </h4>
+            <form class="space-y-4">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="w-full px-4 py-2 rounded bg-[#0A1F44] border border-[#00FFFF] focus:outline-none focus:border-[#8A2BE2]"
+              />
+              <button
+                type="submit"
+                class="bg-[#8A2BE2] hover:bg-[#7B27CC] text-white px-4 py-2 rounded transition-colors duration-200"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-[#00FFFF]/20 mt-8 pt-8 text-center">
+          <p>&copy; 2025 IDEAS DEN. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/darkMode.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

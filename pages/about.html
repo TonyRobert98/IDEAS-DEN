@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - E-Lab Think Tank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../css/styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-black to-[#0A1F44] text-gray-200 transition-colors duration-200"
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full bg-[#0A1F44]/80 backdrop-blur-sm border-b border-[#00FFFF]/10 shadow-lg z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <a href="/" class="text-2xl font-bold text-[#00FFFF]"
+              ><img src="../images/logo.png" alt="logo" class="w-10 h-10"
+            /></a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-center space-x-4">
+              <a
+                href="/"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Home</a
+              >
+              <a
+                href="/pages/about.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >About</a
+              >
+              <a
+                href="/pages/projects.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Projects</a
+              >
+              <a
+                href="/pages/team.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Team</a
+              >
+              <a
+                href="/pages/media.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Media</a
+              >
+              <a
+                href="/pages/contact.html"
+                class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+                >Contact</a
+              >
+              <button
+                id="darkModeToggle"
+                class="p-2 rounded-full hover:bg-[#0A1F44] text-[#00FFFF]"
+              >
+                <i class="fas fa-moon dark:hidden"></i>
+                <i class="fas fa-sun hidden dark:block text-[#FF4500]"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="md:hidden">
+            <button
+              id="mobileMenuButton"
+              class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 p-2 rounded-md"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="/"
+            class="block text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-base font-medium"
+            >Home</a
+          >
+          <a
+            href="/pages/about.html"
+            class="block text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-base font-medium"
+            >About</a
+          >
+          <a
+            href="/pages/projects.html"
+            class="block text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-base font-medium"
+            >Projects</a
+          >
+          <a
+            href="/pages/team.html"
+            class="block text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-base font-medium"
+            >Team</a
+          >
+          <a
+            href="/pages/media.html"
+            class="block text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-base font-medium"
+            >Media</a
+          >
+          <a
+            href="/pages/contact.html"
+            class="block text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-base font-medium"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-[#0A1F44]/30">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-16">
+          <h1
+            class="text-4xl md:text-5xl font-bold text-gray-300 dark:text-white mb-4"
+          >
+            About IDEAS DEN
+          </h1>
+          <p class="text-xl text-gray-300 dark:text-gray-300">
+            Driving innovation through creative thinking ,cutting-edge solutions
+            and innovation.
+          </p>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+          <div
+            class="bg-[#0A1F44]/40 p-8 rounded-lg shadow-lg animate-on-scroll border border-[#00FFFF]/20"
+          >
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              Our Mission
+            </h2>
+            <p class="text-gray-300 dark:text-gray-300">
+              To revolutionize healthcare access by introducing mobile health
+              clinics, telemedicine solutions and emergency response training
+              programs that will ensure quality healthcare services reach the
+              most vulnerable populations.
+            </p>
+          </div>
+          <div
+            class="bg-[#0A1F44]/40 p-8 rounded-lg shadow-lg animate-on-scroll border border-[#00FFFF]/20"
+          >
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              Our Problem Statement
+            </h2>
+            <p class="text-gray-300 dark:text-gray-300">
+              The Democratic Republic of Congo (DRC) faces a severe healthcare
+              crisis, with millions of citizens lacking access to basic and
+              emergency medical services. Poor infrastructure, underfunded
+              facilities, and a shortage of trained professionals make the
+              situation worse, especially in rural and conflict-affected
+              regions. Our project aims to bridge this gap by leveraging
+              technology, training healthcare workers, and improving
+              accessibility to emergency medical care. Through strategic
+              investment and innovation, we envision a healthier DRC by 2035.
+            </p>
+          </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="mb-20">
+          <h2
+            class="text-3xl font-bold text-center text-gray-300 dark:text-white mb-12"
+          >
+            Our Core Values
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-[#0A1F44]/40 p-6 rounded-lg shadow-lg animate-on-scroll border border-[#00FFFF]/20"
+            >
+              <div class="text-blue-600 dark:text-blue-400 mb-4">
+                <i class="fas fa-lightbulb text-4xl"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-300 dark:text-white mb-2"
+              >
+                Innovation
+              </h3>
+              <p class="text-gray-300 dark:text-gray-300">
+                We embrace creative thinking and push boundaries to discover new
+                solutions.
+              </p>
+            </div>
+            <div
+              class="bg-[#0A1F44]/40 p-6 rounded-lg shadow-lg animate-on-scroll border border-[#00FFFF]/20"
+            >
+              <div class="text-blue-600 dark:text-blue-400 mb-4">
+                <i class="fas fa-hands-helping text-4xl"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-300 dark:text-white mb-2"
+              >
+                Creativity
+              </h3>
+              <p class="text-gray-300 dark:text-gray-300">
+                We believe in the power of creating ideas together to achieve
+                greater results.
+              </p>
+            </div>
+            <div
+              class="bg-[#0A1F44]/40 p-6 rounded-lg shadow-lg animate-on-scroll border border-[#00FFFF]/20"
+            >
+              <div class="text-blue-300 dark:text-blue-400 mb-4">
+                <i class="fas fa-globe text-4xl"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-300 dark:text-white mb-2"
+              >
+                Impact & Open minds
+              </h3>
+              <p class="text-gray-300 dark:text-gray-300">
+                We strive to create meaningful change and lasting positive
+                impact.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Journey Section -->
+        <div class="mb-20">
+          <h2
+            class="text-3xl font-bold text-center text-gray-300 dark:text-white mb-12"
+          >
+            Our Journey
+          </h2>
+          <div class="relative">
+            <!-- Timeline -->
+            <div
+              class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 dark:bg-blue-900"
+            ></div>
+
+            <!-- Timeline Items -->
+            <div class="space-y-12">
+              <div
+                class="relative flex items-center justify-between animate-on-scroll"
+              >
+                <div class="w-5/12 pr-8 text-right">
+                  <h3 class="text-xl font-bold text-gray-300 dark:text-white">
+                    January 2025
+                  </h3>
+                  <p class="text-gray-300 dark:text-gray-300">
+                    Foundation of "IDEAS DEN" E-Lab Think Tank
+                  </p>
+                </div>
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                ></div>
+                <div class="w-5/12 pl-8"></div>
+              </div>
+              <div
+                class="relative flex items-center justify-between animate-on-scroll"
+              >
+                <div class="w-5/12 pr-8"></div>
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                ></div>
+                <div class="w-5/12 pl-8">
+                  <h3 class="text-xl font-bold text-gray-300 dark:text-white">
+                    February 2025
+                  </h3>
+                  <p class="text-gray-300 dark:text-gray-300">
+                    First Major Challenge Launch Journey
+                  </p>
+                </div>
+              </div>
+              <div
+                class="relative flex items-center justify-between animate-on-scroll"
+              >
+                <div class="w-5/12 pr-8 text-right">
+                  <h3 class="text-xl font-bold text-gray-300 dark:text-white">
+                    March 2025
+                  </h3>
+                  <p class="text-gray-300 dark:text-gray-300">
+                    Mission & Vision Project Development
+                  </p>
+                </div>
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                ></div>
+                <div class="w-5/12 pl-8"></div>
+              </div>
+              <div
+                class="relative flex items-center justify-between animate-on-scroll"
+              >
+                <div class="w-5/12 pr-8"></div>
+                <div
+                  class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full"
+                ></div>
+                <div class="w-5/12 pl-8">
+                  <h3 class="text-xl font-bold text-gray-300 dark:text-white">
+                    April 2025
+                  </h3>
+                  <p class="text-gray-300 dark:text-gray-300">
+                    Official Launch of "IDEAS DEN" and Presentation to the
+                    community
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A1F44] text-gray-300 py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-[#00FFFF]">IDEAS DEN</h3>
+            <p class="text-gray-400">
+              Innovating for a better tomorrow through collaborative thinking
+              and cutting-edge solutions.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#00FFFF]">
+              Quick Links
+            </h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="/pages/about.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/projects.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/team.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/media.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Media</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/pages/contact.html"
+                  class="hover:text-[#00FFFF] transition-colors duration-200"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#00FFFF]">Connect</h4>
+            <div class="flex space-x-4">
+              <a
+                href="mailto:d.shimwa@alustudent.com"
+                class="hover:text-[#00FFFF] transition-colors duration-200"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/theideas.den/?__pwa=1#"
+                target="_blank"
+                class="hover:text-[#00FFFF] transition-colors duration-200"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4 text-[#00FFFF]">
+              Newsletter
+            </h4>
+            <form class="space-y-4">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="w-full px-4 py-2 rounded bg-[#0A1F44] border border-[#00FFFF] focus:outline-none focus:border-[#8A2BE2]"
+              />
+              <button
+                type="submit"
+                class="bg-[#8A2BE2] hover:bg-[#7B27CC] text-white px-4 py-2 rounded transition-colors duration-200"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="border-t border-[#00FFFF]/20 mt-8 pt-8 text-center">
+          <p>&copy; 2025 IDEAS DEN. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/darkMode.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

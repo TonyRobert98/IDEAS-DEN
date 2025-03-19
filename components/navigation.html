@@ -1,0 +1,102 @@
+<nav
+  class="fixed w-full bg-[#0A1F44]/80 backdrop-blur-sm border-b border-[#00FFFF]/10 shadow-lg z-50"
+>
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <a href="/" class="text-2xl font-bold text-[#00FFFF]"
+          ><img src="images/logo.png" alt="logo" class="w-10 h-10"
+        /></a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-center space-x-4">
+          <a
+            href="/"
+            class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+            >Home</a
+          >
+          <a
+            href="/pages/about.html"
+            class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+            >About</a
+          >
+          <a
+            href="/pages/projects.html"
+            class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+            >Projects</a
+          >
+          <a
+            href="/pages/team.html"
+            class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+            >Team</a
+          >
+          <a
+            href="/pages/media.html"
+            class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+            >Media</a
+          >
+          <a
+            href="/pages/contact.html"
+            class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 px-3 py-2 rounded-md text-sm font-medium"
+            >Contact</a
+          >
+          <button
+            id="darkModeToggle"
+            class="p-2 rounded-full hover:bg-[#0A1F44] text-[#00FFFF]"
+          >
+            <i class="fas fa-moon dark:hidden"></i>
+            <i class="fas fa-sun hidden dark:block text-[#FF4500]"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button
+          id="mobileMenuButton"
+          class="text-gray-200 hover:text-[#00FFFF] hover:bg-[#8A2BE2]/20 hover:shadow-[0_0_10px_#00FFFF40] transition-all duration-300 p-2 rounded-md"
+        >
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+      <a
+        href="/"
+        class="block text-gray-200 hover:text-[#00FFFF] transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium"
+        >Home</a
+      >
+      <a
+        href="/pages/about.html"
+        class="block text-gray-200 hover:text-[#00FFFF] transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium"
+        >About</a
+      >
+      <a
+        href="/pages/projects.html"
+        class="block text-gray-200 hover:text-[#00FFFF] transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium"
+        >Projects</a
+      >
+      <a
+        href="/pages/team.html"
+        class="block text-gray-200 hover:text-[#00FFFF] transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium"
+        >Team</a
+      >
+      <a
+        href="/pages/media.html"
+        class="block text-gray-200 hover:text-[#00FFFF] transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium"
+        >Media</a
+      >
+      <a
+        href="/pages/contact.html"
+        class="block text-gray-200 hover:text-[#00FFFF] transition-colors duration-200 px-3 py-2 rounded-md text-base font-medium"
+        >Contact</a
+      >
+    </div>
+  </div>
+</nav>

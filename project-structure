@@ -1,0 +1,14 @@
+think-tank-website/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   ├── main.js
+│   └── darkMode.js
+├── images/
+└── pages/
+    ├── about.html
+    ├── projects.html
+    ├── team.html
+    ├── media.html
+    └── contact.html 
